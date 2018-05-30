@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { AppRoutesModule } from './app.routes';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DashboardModule,
+    AppRoutesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
